@@ -1,0 +1,341 @@
+/* EthicAI Custom CSS Variables & Animations */
+:root {
+  /* Light Mode Palette */
+  --color-on-error: #ffffff;
+  --color-on-primary-fixed-variant: #001f8d;
+  --color-on-secondary-fixed-variant: #3a0093;
+  --color-secondary: #651fff;
+  --color-tertiary-fixed-dim: #008f95;
+  --color-on-surface-variant: #475569;
+  --color-tertiary-fixed: #007a7f;
+  --color-surface-container-highest: #cbd5e1;
+  --color-on-primary: #ffffff;
+  --color-surface-dim: #f1f5f9;
+  --color-surface-bright: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container: #f8fafc;
+  --color-on-tertiary-container: #002021;
+  --color-surface: #ffffff;
+  --color-inverse-on-surface: #1e293b;
+  --color-surface-container-lowest: #ffffff;
+  --color-primary-fixed: #e0e4ff;
+  --color-on-primary-container: #000f5d;
+  --color-outline-variant: #cbd5e1;
+  --color-primary-fixed-dim: #bbc3ff;
+  --color-secondary-fixed-dim: #d1bcff;
+  --color-secondary-fixed: #f4ebff;
+  --color-on-tertiary-fixed: #002021;
+  --color-on-secondary-container: #24005b;
+  --color-primary-container: #3d5afe;
+  --color-inverse-primary: #2848ee;
+  --color-error-container: #ffdad6;
+  --color-on-primary-fixed: #000f5d;
+  --color-on-secondary: #ffffff;
+  --color-inverse-surface: #0f172a;
+  --color-on-error-container: #410002;
+  --color-on-secondary-fixed: #24005b;
+  --color-on-tertiary-fixed-variant: #004f53;
+  --color-tertiary: #007a7f;
+  --color-background: #f8fafc;
+  --color-tertiary-container: #c1fcff;
+  --color-outline: #64748b;
+  --color-surface-container-low: #f1f5f9;
+  --color-on-background: #0f172a;
+  --color-surface-tint: #3d5afe;
+  --color-secondary-container: #f4ebff;
+  --color-primary: #3d5afe;
+  --color-error: #ba1a1a;
+  --color-on-surface: #0f172a;
+  --color-surface-variant: #e2e8f0;
+  --color-surface-container-high: #e2e8f0;
+
+  /* Ambient Blur Gradients - Light Mode */
+  --gradient-1: rgba(61, 90, 254, 0.06);
+  --gradient-2: rgba(0, 220, 229, 0.04);
+  --gradient-3: rgba(91, 0, 205, 0.03);
+
+  /* Custom glassmorphism properties */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-nav-bg: rgba(248, 250, 252, 0.85);
+  --glass-panel-bg: rgba(255, 255, 255, 0.45);
+  --glass-card-bg: rgba(255, 255, 255, 0.6);
+  --glow-opacity: 0.15;
+}
+
+.dark {
+  /* Dark Mode Palette */
+  --color-on-error: #690005;
+  --color-on-primary-fixed-variant: #002ccd;
+  --color-on-secondary-fixed-variant: #5800c8;
+  --color-secondary: #d1bcff;
+  --color-tertiary-fixed-dim: #00dce5;
+  --color-on-surface-variant: #c5c5d9;
+  --color-tertiary-fixed: #63f7ff;
+  --color-surface-container-highest: #323443;
+  --color-on-primary: #001d93;
+  --color-surface-dim: #101221;
+  --color-surface-bright: #363848;
+  --color-on-tertiary: #003739;
+  --color-surface-container: #1d1f2d;
+  --color-on-tertiary-container: #c1fcff;
+  --color-surface: #101221;
+  --color-inverse-on-surface: #2e2f3f;
+  --color-surface-container-lowest: #0b0d1b;
+  --color-primary-fixed: #dee0ff;
+  --color-on-primary-container: #f1f0ff;
+  --color-outline-variant: #444656;
+  --color-primary-fixed-dim: #bbc3ff;
+  --color-secondary-fixed-dim: #d1bcff;
+  --color-secondary-fixed: #eaddff;
+  --color-on-tertiary-fixed: #002021;
+  --color-on-secondary-container: #c5abff;
+  --color-primary-container: #3d5afe;
+  --color-inverse-primary: #2848ee;
+  --color-error-container: #93000a;
+  --color-on-primary-fixed: #000f5d;
+  --color-on-secondary: #3d008f;
+  --color-inverse-surface: #e1e1f6;
+  --color-on-error-container: #ffdad6;
+  --color-on-secondary-fixed: #24005b;
+  --color-on-tertiary-fixed-variant: #004f53;
+  --color-tertiary: #00dce5;
+  --color-background: #101221;
+  --color-tertiary-container: #007a7f;
+  --color-outline: #8e8fa2;
+  --color-surface-container-low: #191b29;
+  --color-on-background: #e1e1f6;
+  --color-surface-tint: #bbc3ff;
+  --color-secondary-container: #5b00cd;
+  --color-primary: #bbc3ff;
+  --color-error: #ffb4ab;
+  --color-on-surface: #e1e1f6;
+  --color-surface-variant: #323443;
+  --color-surface-container-high: #272938;
+
+  /* Ambient Blur Gradients - Dark Mode */
+  --gradient-1: rgba(61, 90, 254, 0.15);
+  --gradient-2: rgba(0, 220, 229, 0.1);
+  --gradient-3: rgba(91, 0, 205, 0.05);
+
+  /* Glassmorphism - Dark Mode */
+  --glass-bg: rgba(30, 31, 45, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-nav-bg: rgba(16, 18, 33, 0.85);
+  --glass-panel-bg: rgba(29, 31, 45, 0.4);
+  --glass-card-bg: rgba(29, 31, 45, 0.6);
+  --glow-opacity: 0.3;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  overflow-x: hidden;
+  background-image: 
+      radial-gradient(circle at 0% 0%, var(--gradient-1) 0%, transparent 40%),
+      radial-gradient(circle at 100% 100%, var(--gradient-2) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, var(--gradient-3) 0%, transparent 50%);
+  background-attachment: fixed;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              background-image 0.4s ease;
+}
+
+/* Glassmorphism Styles */
+.glass-container {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: var(--glass-nav-bg);
+  border-bottom: 1px solid var(--glass-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel {
+  background: var(--glass-panel-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card {
+  background: var(--glass-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(187, 195, 255, var(--glow-opacity));
+}
+
+.glowing-border {
+  position: relative;
+  background: var(--color-surface-container);
+  transition: background 0.3s ease;
+}
+
+.glowing-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(45deg, #3d5afe, #00dce5, #3d5afe);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+.glowing-border:hover::after {
+  opacity: 0.5;
+}
+
+.mesh-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.indicator-bar {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb, rgba(187, 195, 255, 0.2));
+  border-radius: 10px;
+}
+
+/* SPA Pane Transitions */
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+  animation: slideFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideFadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(16px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* 3D Flashcards */
+.flashcard-box { 
+  perspective: 1000px; 
+  min-height: 180px; 
+}
+.flashcard-card { 
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); 
+  transform-style: preserve-3d; 
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  min-height: 180px; 
+}
+.flashcard-box.flipped .flashcard-card { 
+  transform: rotateY(180deg); 
+}
+.card-front, .card-back { 
+  backface-visibility: hidden; 
+  position: absolute; 
+  inset: 0; 
+  border-radius: 1rem; 
+  padding: 1.5rem; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+.card-back { 
+  transform: rotateY(180deg); 
+}
+
+/* Drag and Drop Over effect */
+.drag-over {
+  border: 2px dashed var(--color-tertiary) !important;
+  background-color: rgba(0, 220, 229, 0.08) !important;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+
+/* Interactive Card Hovers */
+.interactive-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.interactive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-primary);
+}
+
+/* Magnetic buttons utility */
+.btn-magnetic {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+}
+.btn-magnetic:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+.btn-magnetic:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Theme switch rotation animation */
+#theme-toggle-icon.rotate-anim {
+  animation: rotateSpin 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes rotateSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(0.6); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Active Nav Glow */
+.nav-active-glow {
+  box-shadow: inset 0 0 12px rgba(61, 90, 254, 0.15), 0 2px 8px rgba(61, 90, 254, 0.05);
+}
+
+/* Pulse animation for current chapter */
+.pulse-glow {
+  animation: pulseLight 2s infinite alternate;
+}
+@keyframes pulseLight {
+  from {
+    box-shadow: 0 0 4px rgba(61, 90, 254, 0.2);
+  }
+  to {
+    box-shadow: 0 0 12px rgba(61, 90, 254, 0.5);
+  }
+}
