@@ -20,53 +20,53 @@
         theme: {
           extend: {
             "colors": {
-                "on-error": "#690005",
-                "on-primary-fixed-variant": "#002ccd",
-                "on-secondary-fixed-variant": "#5800c8",
-                "secondary": "#d1bcff",
-                "tertiary-fixed-dim": "#00dce5",
-                "on-surface-variant": "#c5c5d9",
-                "tertiary-fixed": "#63f7ff",
-                "surface-container-highest": "#323443",
-                "on-primary": "#001d93",
-                "surface-dim": "#101221",
-                "surface-bright": "#363848",
-                "on-tertiary": "#003739",
-                "surface-container": "#1d1f2d",
-                "on-tertiary-container": "#c1fcff",
-                "surface": "#101221",
-                "inverse-on-surface": "#2e2f3f",
-                "surface-container-lowest": "#0b0d1b",
-                "primary-fixed": "#dee0ff",
-                "on-primary-container": "#f1f0ff",
-                "outline-variant": "#444656",
-                "primary-fixed-dim": "#bbc3ff",
-                "secondary-fixed-dim": "#d1bcff",
-                "secondary-fixed": "#eaddff",
-                "on-tertiary-fixed": "#002021",
-                "on-secondary-container": "#c5abff",
-                "primary-container": "#3d5afe",
-                "inverse-primary": "#2848ee",
-                "error-container": "#93000a",
-                "on-primary-fixed": "#000f5d",
-                "on-secondary": "#3d008f",
-                "inverse-surface": "#e1e1f6",
-                "on-error-container": "#ffdad6",
-                "on-secondary-fixed": "#24005b",
-                "on-tertiary-fixed-variant": "#004f53",
-                "tertiary": "#00dce5",
-                "background": "#101221",
-                "tertiary-container": "#007a7f",
-                "outline": "#8e8fa2",
-                "surface-container-low": "#191b29",
-                "on-background": "#e1e1f6",
-                "surface-tint": "#bbc3ff",
-                "secondary-container": "#5b00cd",
-                "primary": "#bbc3ff",
-                "error": "#ffb4ab",
-                "on-surface": "#e1e1f6",
-                "surface-variant": "#323443",
-                "surface-container-high": "#272938"
+                "on-error": "var(--color-on-error)",
+                "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+                "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+                "secondary": "var(--color-secondary)",
+                "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+                "on-surface-variant": "var(--color-on-surface-variant)",
+                "tertiary-fixed": "var(--color-tertiary-fixed)",
+                "surface-container-highest": "var(--color-surface-container-highest)",
+                "on-primary": "var(--color-on-primary)",
+                "surface-dim": "var(--color-surface-dim)",
+                "surface-bright": "var(--color-surface-bright)",
+                "on-tertiary": "var(--color-on-tertiary)",
+                "surface-container": "var(--color-surface-container)",
+                "on-tertiary-container": "var(--color-on-tertiary-container)",
+                "surface": "var(--color-surface)",
+                "inverse-on-surface": "var(--color-inverse-on-surface)",
+                "surface-container-lowest": "var(--color-surface-container-lowest)",
+                "primary-fixed": "var(--color-primary-fixed)",
+                "on-primary-container": "var(--color-on-primary-container)",
+                "outline-variant": "var(--color-outline-variant)",
+                "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+                "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+                "secondary-fixed": "var(--color-secondary-fixed)",
+                "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+                "on-secondary-container": "var(--color-on-secondary-container)",
+                "primary-container": "var(--color-primary-container)",
+                "inverse-primary": "var(--color-inverse-primary)",
+                "error-container": "var(--color-error-container)",
+                "on-primary-fixed": "var(--color-on-primary-fixed)",
+                "on-secondary": "var(--color-on-secondary)",
+                "inverse-surface": "var(--color-inverse-surface)",
+                "on-error-container": "var(--color-on-error-container)",
+                "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+                "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+                "tertiary": "var(--color-tertiary)",
+                "background": "var(--color-background)",
+                "tertiary-container": "var(--color-tertiary-container)",
+                "outline": "var(--color-outline)",
+                "surface-container-low": "var(--color-surface-container-low)",
+                "on-background": "var(--color-on-background)",
+                "surface-tint": "var(--color-surface-tint)",
+                "secondary-container": "var(--color-secondary-container)",
+                "primary": "var(--color-primary)",
+                "error": "var(--color-error)",
+                "on-surface": "var(--color-on-surface)",
+                "surface-variant": "var(--color-surface-variant)",
+                "surface-container-high": "var(--color-surface-container-high)"
             },
             "borderRadius": {
                 "DEFAULT": "0.25rem",
@@ -103,128 +103,12 @@
         },
       }
     </script>
-    <style>
-        body {
-            background-color: #101221;
-            color: #e1e1f6;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 0% 0%, rgba(61, 90, 254, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 100% 100%, rgba(0, 220, 229, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 50% 50%, rgba(91, 0, 205, 0.05) 0%, transparent 50%);
-            background-attachment: fixed;
-        }
-        
-        .glass-container {
-            background: rgba(30, 31, 45, 0.6);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .glass-nav {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            background-color: rgba(16, 18, 33, 0.85);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .glass-panel {
-            background: rgba(29, 31, 45, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(187, 195, 255, 0.1);
-        }
-
-        .glass-card {
-            background: rgba(29, 31, 45, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(142, 143, 162, 0.2);
-        }
-
-        .glow-accent {
-            box-shadow: 0 0 20px rgba(187, 195, 255, 0.3);
-        }
-
-        .glowing-border {
-            position: relative;
-            background: rgba(16, 18, 33, 0.6);
-        }
-        .glowing-border::after {
-            content: '';
-            position: absolute;
-            inset: -1px;
-            background: linear-gradient(45deg, #3d5afe, #00dce5, #3d5afe);
-            z-index: -1;
-            border-radius: inherit;
-            opacity: 0.3;
-            transition: opacity 0.3s ease;
-        }
-        .glowing-border:hover::after {
-            opacity: 0.6;
-        }
-
-        .mesh-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .indicator-bar {
-            width: 4px;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: rgba(187, 195, 255, 0.2);
-            border-radius: 10px;
-        }
-
-        /* SPA Pane Transitions */
-        .tab-pane {
-            display: none;
-        }
-        .tab-pane.active {
-            display: block;
-            animation: fadeIn 0.4s ease-out forwards;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* 3D Flashcards */
-        .flashcard-box { perspective: 1000px; min-height: 180px; }
-        .flashcard-card { transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; position: relative; width: 100%; height: 100%; min-height: 180px; }
-        .flashcard-box.flipped .flashcard-card { transform: rotateY(180deg); }
-        .card-front, .card-back { backface-visibility: hidden; position: absolute; inset: 0; border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
-        .card-back { transform: rotateY(180deg); }
-
-        .drag-over {
-            border: 2px dashed #00dce5 !important;
-            background-color: rgba(0, 220, 229, 0.05) !important;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body class="font-body-md text-on-surface selection:bg-primary-container selection:text-white">
     <!-- Mesh Background Decor -->
     <div class="mesh-bg">
+        <canvas id="network-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-40"></canvas>
         <div class="absolute top-[10%] left-[10%] w-[400px] h-[400px] bg-primary/10 blur-[100px] rounded-full"></div>
         <div class="absolute bottom-[10%] right-[10%] w-[300px] h-[300px] bg-tertiary/10 blur-[100px] rounded-full"></div>
     </div>
@@ -302,6 +186,15 @@
                     <span class="material-symbols-outlined text-outline text-[20px]">search</span>
                     <input class="bg-transparent border-none focus:ring-0 text-sm w-36 placeholder:text-outline text-white focus:outline-none" placeholder="Cari materi..." type="text" id="global-search-input" onkeyup="handleGlobalSearch(event)"/>
                 </div>
+                <!-- Interactive Theme & Mute Switchers -->
+                <div class="flex items-center gap-2">
+                    <button onclick="toggleMute()" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 border border-outline-variant/20 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all cursor-pointer btn-magnetic" id="mute-toggle-btn" title="Suara: Aktif">
+                        <span class="material-symbols-outlined text-[20px]" id="mute-toggle-icon">volume_up</span>
+                    </button>
+                    <button onclick="toggleTheme()" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 border border-outline-variant/20 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all cursor-pointer btn-magnetic" id="theme-toggle-btn" title="Ubah Tema">
+                        <span class="material-symbols-outlined text-[20px]" id="theme-toggle-icon">light_mode</span>
+                    </button>
+                </div>
                 <div class="h-8 w-[1px] bg-outline-variant/30 hidden sm:block"></div>
                 <div class="flex items-center gap-3 cursor-pointer bg-white/5 hover:bg-white/10 p-1.5 pr-4 rounded-full transition-all border border-white/5" onclick="showUserProfile()">
                     <div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs glow-accent">M</div>
@@ -342,6 +235,48 @@
                                 <span class="material-symbols-outlined">extension</span>
                                 <span>Simulasi Interaktif</span>
                             </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Live Stats Section -->
+                <section class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-headline-md text-primary font-bold">Statistik Belajar Anda</h3>
+                        <span class="text-[10px] text-on-surface-variant bg-white/5 px-3 py-1 rounded-full border border-outline-variant/30 font-medium">Sinkronisasi Real-Time</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <!-- Stat 1: Bab -->
+                        <div class="glass-container p-6 rounded-3xl border border-white/5 text-center flex flex-col items-center justify-center relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary font-mono mb-1" id="stat-chapters">0 / 5</div>
+                            <div class="text-[10px] text-on-surface-variant font-bold uppercase tracking-wider">Bab Dibaca</div>
+                            <div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-3">
+                                <div id="stat-chapters-bar" class="bg-primary h-full w-[0%] transition-all duration-500"></div>
+                            </div>
+                        </div>
+                        <!-- Stat 2: Video -->
+                        <div class="glass-container p-6 rounded-3xl border border-white/5 text-center flex flex-col items-center justify-center relative overflow-hidden group hover:border-tertiary/30 transition-all duration-300">
+                            <div class="text-2xl font-bold text-tertiary font-mono mb-1" id="stat-videos">0 / 5</div>
+                            <div class="text-[10px] text-on-surface-variant font-bold uppercase tracking-wider">Video Checkpoint</div>
+                            <div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-3">
+                                <div id="stat-videos-bar" class="bg-tertiary h-full w-[0%] transition-all duration-500"></div>
+                            </div>
+                        </div>
+                        <!-- Stat 3: Mini Kuis -->
+                        <div class="glass-container p-6 rounded-3xl border border-white/5 text-center flex flex-col items-center justify-center relative overflow-hidden group hover:border-secondary/30 transition-all duration-300">
+                            <div class="text-2xl font-bold text-secondary font-mono mb-1" id="stat-quizzes">0 / 5</div>
+                            <div class="text-[10px] text-on-surface-variant font-bold uppercase tracking-wider">Kuis Bab Lulus</div>
+                            <div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-3">
+                                <div id="stat-quizzes-bar" class="bg-secondary h-full w-[0%] transition-all duration-500"></div>
+                            </div>
+                        </div>
+                        <!-- Stat 4: Evaluasi Akhir -->
+                        <div class="glass-container p-6 rounded-3xl border border-white/5 text-center flex flex-col items-center justify-center relative overflow-hidden group hover:border-error/30 transition-all duration-300">
+                            <div class="text-2xl font-bold text-error font-mono mb-1" id="stat-final-score">-</div>
+                            <div class="text-[10px] text-on-surface-variant font-bold uppercase tracking-wider">Skor Kuis CBT</div>
+                            <div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-3">
+                                <div id="stat-final-score-bar" class="bg-error h-full w-[0%] transition-all duration-500"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
